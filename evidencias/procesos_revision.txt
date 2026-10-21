@@ -1,0 +1,174 @@
+USER         PID    PPID STAT CMD
+root           1       0 Ss   /sbin/init splash
+root           2       0 S    [kthreadd]
+root           3       2 S    [pool_workqueue_release]
+root           4       2 I<   [kworker/R-rcu_gp]
+root           5       2 I<   [kworker/R-sync_wq]
+root           6       2 I<   [kworker/R-kvfree_rcu_reclaim]
+root           7       2 I<   [kworker/R-slub_flushwq]
+root           8       2 I<   [kworker/R-netns]
+root          12       2 I    [kworker/u8:0-ipv6_addrconf]
+root          13       2 I<   [kworker/R-mm_percpu_wq]
+root          14       2 S    [ksoftirqd/0]
+root          15       2 I    [rcu_preempt]
+root          16       2 S    [rcu_exp_par_gp_kthread_worker/0]
+root          17       2 S    [rcu_exp_gp_kthread_worker]
+root          18       2 S    [migration/0]
+root          19       2 S    [idle_inject/0]
+root          20       2 S    [cpuhp/0]
+root          21       2 S    [cpuhp/1]
+root          22       2 S    [idle_inject/1]
+root          23       2 S    [migration/1]
+root          24       2 S    [ksoftirqd/1]
+root          26       2 I<   [kworker/1:0H-events_highpri]
+root          31       2 S    [kdevtmpfs]
+root          32       2 I<   [kworker/R-inet_frag_wq]
+root          33       2 I    [rcu_tasks_kthread]
+root          34       2 I    [rcu_tasks_rude_kthread]
+root          35       2 I    [rcu_tasks_trace_kthread]
+root          36       2 S    [kauditd]
+root          37       2 S    [khungtaskd]
+root          38       2 S    [oom_reaper]
+root          40       2 I<   [kworker/R-writeback]
+root          42       2 S    [kcompactd0]
+root          43       2 SN   [ksmd]
+root          44       2 SN   [khugepaged]
+root          45       2 I<   [kworker/R-kblockd]
+root          46       2 I<   [kworker/R-blkcg_punt_bio]
+root          47       2 I<   [kworker/R-kintegrityd]
+root          48       2 S    [irq/9-acpi]
+root          50       2 I<   [kworker/R-tpm_dev_wq]
+root          51       2 I<   [kworker/R-edac-poller]
+root          52       2 I<   [kworker/R-devfreq_wq]
+root          53       2 I<   [kworker/R-quota_events_unbound]
+root          54       2 I<   [kworker/0:1H-kblockd]
+root          55       2 S    [kswapd0]
+root          56       2 I    [kdamond.0]
+root          59       2 I<   [kworker/R-kthrotld]
+root          60       2 I<   [kworker/R-acpi_thermal_pm]
+root          61       2 I<   [kworker/R-mld]
+root          63       2 I<   [kworker/R-ipv6_addrconf]
+root          64       2 I<   [kworker/R-kstrp]
+root          65       2 I    [kworker/u8:1-ipv6_addrconf]
+root          72       2 I<   [kworker/u11:0]
+root          73       2 I<   [kworker/u12:0]
+root          74       2 I<   [kworker/u13:0]
+root         136       2 I<   [kworker/1:1H-kblockd]
+root         186       2 I<   [kworker/R-ata_sff]
+root         187       2 S    [scsi_eh_0]
+root         189       2 I<   [kworker/R-scsi_tmf_0]
+root         196       2 S    [scsi_eh_1]
+root         197       2 I<   [kworker/R-scsi_tmf_1]
+root         206       2 S    [scsi_eh_2]
+root         207       2 I<   [kworker/R-scsi_tmf_2]
+root         210       2 S    [irq/18-vmwgfx]
+root         211       2 I<   [kworker/R-ttm]
+root         248       2 S    [jbd2/sda1-8]
+root         249       2 I<   [kworker/R-ext4-rsv-conversion]
+root         308       1 Ss   /usr/lib/systemd/systemd-journald
+root         343       1 Ss   /usr/lib/systemd/systemd-udevd
+root         351       1 Ss   /usr/lib/systemd/systemd-userdbd
+root         382       2 S    [psimon]
+root         405       1 Ss   /usr/sbin/haveged --Foreground --verbose=1
+root         437       2 S    [psimon]
+root         459       1 Ssl  /usr/libexec/accounts-daemon
+message+     472       1 Ss   /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+polkitd      477       1 Ssl  /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
+root         478       1 Ss   /usr/lib/systemd/systemd-logind
+root         528       1 Ssl  /usr/sbin/NetworkManager --no-daemon
+root         548       1 Ssl  /usr/sbin/ModemManager
+root         582       1 Sl   /usr/bin/VBoxDRMClient
+root         588       1 Sl   /usr/sbin/VBoxService
+root         689       2 I<   [kworker/R-rpciod]
+root         690       2 I<   [kworker/R-xprtiod]
+root         693       1 Ss   /usr/sbin/cron -f
+root         699       1 SLsl /usr/sbin/lightdm
+root         721       1 Ss+  /usr/sbin/agetty --noreset --noclear - linux
+root         722     699 Ssl+ /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root         772       2 S    [psimon]
+rtkit        802       1 SNsl /usr/libexec/rtkit-daemon
+root         927     699 Sl   lightdm --session-child 13 24
+kali         952       1 Ss   /usr/lib/systemd/systemd --user
+kali         954     952 S    (sd-pam)
+root         965       2 I<   [kworker/0:2H]
+kali         976     952 Ss   /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+kali         977     952 S<sl /usr/bin/pipewire
+kali         979     952 SLsl /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+kali         983     952 Ss   /usr/bin/mpris-proxy
+kali         985     952 S<sl /usr/bin/wireplumber
+kali         986     952 Ssl  /usr/bin/pipewire -c filter-chain.conf
+kali         987     952 S<sl /usr/bin/pipewire-pulse
+kali         993     927 Ssl  xfce4-session
+kali        1069       1 S    /usr/bin/VBoxClient --clipboard
+kali        1072    1069 Sl   /usr/bin/VBoxClient --clipboard
+kali        1078       1 S    /usr/bin/VBoxClient --seamless
+kali        1080    1078 Sl   /usr/bin/VBoxClient --seamless
+kali        1085       1 S    /usr/bin/VBoxClient --draganddrop
+kali        1087    1085 Sl   /usr/bin/VBoxClient --draganddrop
+kali        1101       1 S    /usr/bin/VBoxClient --vmsvga-session
+kali        1103    1101 Sl   /usr/bin/VBoxClient --vmsvga-session
+kali        1120     952 Ssl  /usr/libexec/at-spi-bus-launcher
+kali        1127    1120 S    /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 12 --address=unix:path=/run/user/1000/at-spi/bus_0
+kali        1137     952 Sl   /usr/libexec/at-spi2-registryd --use-gnome-session
+kali        1145       1 Ss   /usr/bin/ssh-agent -s
+kali        1154     952 SLsl /usr/bin/gpg-agent --supervised
+kali        1157     993 Sl   xfwm4
+kali        1162     952 Ssl  /usr/libexec/gvfsd
+kali        1168     952 Sl   /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+kali        1195     993 Sl   xfsettingsd
+kali        1201     952 Ssl  /usr/libexec/dconf-service
+kali        1202     993 Sl   xfce4-panel
+kali        1211     993 Sl   Thunar --daemon
+kali        1219     993 Sl   xfdesktop
+kali        1224    1202 Sl   /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libwhiskermenu.so 1 25165831 whiskermenu Whisker Menu Show a menu to easily access installed applications
+kali        1245     952 Ssl  /usr/libexec/gvfsd-metadata
+kali        1263    1202 Sl   /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libcpugraph.so 13 25165836 cpugraph CPU Graph Graphical representation of the CPU load
+kali        1264    1202 Sl   /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 14 25165837 systray Status Tray Plugin Provides status notifier items (application indicators) and legacy systray items
+kali        1265    1202 Sl   /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libgenmon.so 15 25165838 genmon Generic Monitor Show output of a command.
+kali        1266    1202 Sl   /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libpulseaudio-plugin.so 16 25165839 pulseaudio PulseAudio Plugin Adjust the audio volume of the PulseAudio sound system
+kali        1267    1202 Sl   /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libnotification-plugin.so 17 25165840 notification-plugin Notification Plugin Notification plugin for the Xfce panel
+kali        1270    1202 Sl   /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4powermanager.so 18 25165841 power-manager-plugin Power Manager Plugin Display the battery levels of your devices and control the brightness of your display
+kali        1286    1202 Sl   /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libactions.so 22 25165842 actions Action Buttons Log out, lock or other system actions
+root        1366       1 Ssl  /usr/libexec/upowerd
+kali        1381     952 Ssl  /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+kali        1502     993 Sl   /usr/bin/python3 /usr/bin/blueman-applet
+kali        1517     993 Sl   xfce4-screensaver
+kali        1530     993 Sl   xiccd
+kali        1537     993 S    /usr/bin/python3 /usr/share/system-config-printer/applet.py
+kali        1538     993 Sl   nm-applet
+kali        1549       1 Ssl  xcape -e Super_L Control_L Escape
+colord      1553       1 Ssl  /usr/libexec/colord
+kali        1560     993 S    xautoresize
+kali        1566     993 Sl   /usr/libexec/geoclue-2.0/demos/agent
+kali        1573     993 Sl   /usr/libexec/polkit-mate-authentication-agent-1
+kali        1580     993 Sl   xfce4-power-manager
+kali        1654     952 Ssl  /usr/libexec/gvfs-udisks2-volume-monitor
+root        1662       1 Ssl  /usr/libexec/udisks2/udisksd
+kali        1710     952 Ssl  /usr/libexec/gvfs-mtp-volume-monitor
+kali        1720     952 Ssl  /usr/libexec/gvfs-gphoto2-volume-monitor
+kali        1739     952 Ssl  /usr/libexec/gvfs-goa-volume-monitor
+kali        1754     952 Ssl  /usr/libexec/gvfs-afc-volume-monitor
+kali        1787    1162 Sl   /usr/libexec/gvfsd-trash --spawner :1.24 /org/gtk/gvfs/exec_spaw/0
+kali        1823     952 Ssl  /usr/libexec/bluetooth/obexd
+kali        1869     952 Ssl  /usr/libexec/xdg-desktop-portal
+kali        1877     952 Ssl  /usr/libexec/xdg-permission-store
+kali        1883     952 Ssl  /usr/libexec/xdg-document-portal
+root        1889    1883 Ss   fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+kali        1894     952 Ssl  /usr/libexec/xdg-desktop-portal-gtk
+root      123036       2 I    [kworker/u9:2-events_unbound]
+root      237731       2 I    [kworker/u9:0-flush-8:0]
+root      250078       2 I    [kworker/u10:2-flush-8:0]
+kali      400389       1 Sl   /usr/bin/qterminal
+kali      400396  400389 Ss   /usr/bin/zsh
+root      409899       2 I    [kworker/1:2-events]
+root      474950       2 I    [kworker/u10:0-events_unbound]
+root      525034       2 I    [kworker/u9:3]
+root      535077       2 I    [kworker/0:2-events]
+root      535156       2 I    [kworker/1:1-events]
+root      544046       2 I    [kworker/0:0-ata_sff]
+root      545870     351 S    systemd-userwork: waiting...
+root      545871     351 S    systemd-userwork: waiting...
+root      545872     351 S    systemd-userwork: waiting...
+root      546548       2 I    [kworker/0:1-ata_sff]
+root      547426       2 I    [kworker/1:0]
+kali      547647  400396 R+   ps -eo user,pid,ppid,stat,cmd

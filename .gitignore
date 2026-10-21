@@ -1,0 +1,9 @@
+# Archivos temporales
+__pycache__/
+*.pyc
+*.tmp
+*~
+
+# Configuración local de editores
+.vscode/
+.idea/

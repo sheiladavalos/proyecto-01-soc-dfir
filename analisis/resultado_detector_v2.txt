@@ -1,0 +1,24 @@
+=== DETECTOR SSH - VERSION 2 ===
+Archivo analizado: evidencias/auth.log
+Eventos reconocidos: 9
+
+=== LINEA DE TIEMPO ===
+2026-10-20 09:14:02 | 203.0.113.45 | invalid user admin | Failed password
+2026-10-20 09:14:08 | 203.0.113.45 | root | Failed password
+2026-10-20 09:14:15 | 203.0.113.45 | invalid user test | Failed password
+2026-10-20 09:14:22 | 203.0.113.45 | analyst | Failed password
+2026-10-20 09:14:31 | 203.0.113.45 | analyst | Failed password
+2026-10-20 09:15:04 | 203.0.113.45 | analyst | Accepted password
+2026-10-20 09:15:06 | No indicada | analyst(uid=1001) | Sesion opened
+2026-10-20 09:18:42 | No indicada | analyst | Sesion closed
+2026-10-20 09:22:10 | 198.51.100.27 | invalid user guest | Failed password
+
+=== RESUMEN POR IP ===
+198.51.100.27: fallidos=1, exitosos=0
+203.0.113.45: fallidos=5, exitosos=1
+
+=== ALERTAS ===
+[ALERTA] 203.0.113.45: 5 intentos fallidos
+[REVISION] 203.0.113.45: fallos y acceso exitoso; investigar si el acceso fue legítimo
+
+Total de alertas: 2

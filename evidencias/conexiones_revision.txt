@@ -1,0 +1,2 @@
+Netid State Recv-Q Send-Q  Local Address:Port Peer Address:PortProcess
+udp   ESTAB 0      0      10.0.2.15%eth0:68       10.0.2.2:67   users:(("NetworkManager",pid=528,fd=26))

