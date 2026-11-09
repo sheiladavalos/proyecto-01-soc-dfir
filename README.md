@@ -26,14 +26,14 @@ El objetivo es analizar registros de autenticación SSH, identificar comportamie
 - Git y GitHub
 - SHA-256 (`sha256sum`)
 - Registros de autenticación SSH simulados
-
+  
 ## Estructura del proyecto
 
-- `evidencias/`: registros simulados y archivos de evidencia de la máquina virtual.
-- `analisis/detectar_ssh.py`: script de análisis automatizado.
-- `analisis/resultado_detector_v2.txt`: resultado generado por el detector.
-- `analisis/hallazgos-iniciales.md`: hallazgos preliminares.
-- `analisis/informe_incidente.md`: informe del incidente simulado.
+- `evidencias/`: registros simulados y archivos de evidencia del entorno Kali Linux.
+- [`detectar_ssh.py`](analisis/detectar_ssh.py): script de análisis automatizado.
+- [`resultado_detector_v2.txt`](analisis/resultado_detector_v2.txt): resultados generados por el detector.
+- [`hallazgos-iniciales.md`](analisis/hallazgos-iniciales.md): documentación de los hallazgos preliminares.
+- [`informe_incidente.md`](analisis/informe_incidente.md): informe técnico del análisis del incidente simulado.
 
 ## Escenario analizado
 
@@ -48,6 +48,8 @@ El detector identifica:
 - Un intento fallido adicional desde `198.51.100.27`.
 
 Estos resultados requieren análisis contextual: los registros, por sí solos, no permiten confirmar que haya ocurrido una intrusión real.
+
+Como parte del ejercicio, también se analizaron registros simulados de actividad del sistema. Estos incluyen acciones relacionadas con el uso de privilegios, la descarga y modificación de permisos de un archivo y su posterior ejecución. Esta fuente complementaria se utiliza para ampliar el análisis, pero no permite establecer por sí sola una correlación directa con la sesión SSH identificada.
 
 ## Cómo ejecutar el detector
 
