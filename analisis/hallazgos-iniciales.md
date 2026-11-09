@@ -20,6 +20,7 @@ del sistema. Las dos fuentes son simuladas.
 La secuencia es compatible con una posible actividad posterior
 a un acceso no autorizado. Sin embargo, no confirma por sí sola
 un compromiso ni permite determinar el impacto.
+Los eventos de autenticación SSH y los registros de actividad posterior proceden de fuentes simuladas independientes. Aunque su secuencia temporal resulta compatible con una posible relación entre ambos conjuntos de eventos, la información disponible no permite establecer una correlación directa ni atribuir con certeza toda la actividad a la sesión SSH identificada.
 
 ## 5. Integridad
 El archivo evidencias/auth.log coincidió con el hash SHA-256
